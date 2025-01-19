@@ -17,7 +17,7 @@ tokenizer.fit_on_texts([football_history])
 max_length = 337
 
 # Streamlit UI
-st.title("⚡ Next Word Predictor - RNN Model")
+st.title("Next Word Predictor - RNN Model")
 st.write("🎯 **Transform your ideas into complete sentences with the power of RNNs!**")
 st.markdown(
     """
