@@ -17,20 +17,20 @@ tokenizer.fit_on_texts([football_history])
 max_length = 337
 
 # Streamlit UI
-st.title("⚡ AI-Powered Next Word Predictor")
+st.title("⚡ Next Word Predictor - RNN Model")
 st.write("🎯 **Transform your ideas into complete sentences with the power of RNNs!**")
 st.markdown(
     """
     This app predicts the next set of words based on the text you provide. 
-    Whether you're writing an article, brainstorming, or just having fun, this tool has you covered!
+    The model is trained on a dataset of football history paragraphs which is get through the web scraping.
     """
 )
 
 # Input for user text
 st.subheader("🔤 Enter Your Starting Text")
 input_text = st.text_input(
-    "Start typing below and let AI take over!", 
-    placeholder="Football clubs"
+    "Start typing below and let Model take over!", 
+    placeholder="Enter your text here..."
 )
 
 # Input for the number of words to predict
@@ -72,7 +72,7 @@ if st.button("🚀 Predict Next Words"):
 st.write("\n---\n")
 st.markdown(
     """
-    Developed with ❤️ by **Isuru Madhushan**  
+    Developed  by **Isuru Madhushan**  
     
     """
 )
